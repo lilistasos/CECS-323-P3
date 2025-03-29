@@ -1,0 +1,25 @@
+{
+    "$jsonSchema": {
+        "bsonType": "object",
+        "title": "Theme",
+        "properties": {
+            "_id": {
+                "bsonType": "int"
+            },
+            "name": {
+                "bsonType": "string"
+            },
+            "sets": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "string"
+                }
+            }
+        },
+        "required": [
+            "_id",
+            "name",
+            "sets"
+        ]
+    }
+}

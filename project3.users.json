@@ -1,0 +1,26 @@
+[{
+  "_id": 1,
+  "name": "Neal",
+  "ownedSets": [
+    {
+      "inventoryId": 80073,
+      "quantity": 2,
+      "acquiredDate": "2023-09-23"
+    },
+    {
+      "inventoryId": 78168,
+      "quantity": 1,
+      "acquiredDate": "2023-07-22"
+    },
+    {
+      "inventoryId": 94718,
+      "quantity": 1,
+      "acquiredDate": "2024-01-18"
+    },
+    {
+      "inventoryId": 21862,
+      "quantity": 1,
+      "acquiredDate": "2024-03-09"
+    }
+  ]
+}]

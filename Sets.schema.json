@@ -1,0 +1,57 @@
+{
+    "$jsonSchema": {
+        "bsonType": "object",
+        "title": "Lego Set",
+        "properties": {
+            "_id": {
+                "bsonType": "string"
+            },
+            "name": {
+                "bsonType": "string"
+            },
+            "releaseYear": {
+                "bsonType": "int"
+            },
+            "theme": {
+                "bsonType": "object",
+                "properties": {
+                    "themeId": {
+                        "bsonType": "int"
+                    },
+                    "themeName": {
+                        "bsonType": "string"
+                    }
+                },
+                "required": [
+                    "themeId",
+                    "themeName"
+                ]
+            },
+            "inventories": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "inventoryId": {
+                            "bsonType": "int"
+                        },
+                        "version": {
+                            "bsonType": "int"
+                        }
+                    },
+                    "required": [
+                        "inventoryId",
+                        "version"
+                    ]
+                }
+            }
+        },
+        "required": [
+            "_id",
+            "name",
+            "releaseYear",
+            "theme",
+            "inventories"
+        ]
+    }
+}

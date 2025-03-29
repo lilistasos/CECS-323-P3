@@ -1,0 +1,104 @@
+{
+    "$jsonSchema": {
+        "bsonType": "object",
+        "title": "Inventory",
+        "properties": {
+            "_id": {
+                "bsonType": "int"
+            },
+            "version": {
+                "bsonType": "int"
+            },
+            "setNumber": {
+                "bsonType": "string"
+            },
+            "parts": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "part": {
+                            "bsonType": "object",
+                            "properties": {
+                                "partNumber": {
+                                    "bsonType": "string"
+                                },
+                                "partName": {
+                                    "bsonType": "string"
+                                }
+                            },
+                            "required": [
+                                "partNumber",
+                                "partName"
+                            ]
+                        },
+                        "color": {
+                            "bsonType": "object",
+                            "properties": {
+                                "colorId": {
+                                    "bsonType": "int"
+                                },
+                                "colorName": {
+                                    "bsonType": "string"
+                                }
+                            },
+                            "required": [
+                                "colorId",
+                                "colorName"
+                            ]
+                        },
+                        "quantity": {
+                            "bsonType": "int"
+                        },
+                        "isSpare": {
+                            "bsonType": "bool"
+                        }
+                    },
+                    "required": [
+                        "part",
+                        "color",
+                        "quantity",
+                        "isSpare"
+                    ]
+                }
+            },
+            "minifigures": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "minifigure": {
+                            "bsonType": "object",
+                            "properties": {
+                                "figureNumber": {
+                                    "bsonType": "string"
+                                },
+                                "figureName": {
+                                    "bsonType": "string"
+                                }
+                            },
+                            "required": [
+                                "figureNumber",
+                                "figureName"
+                            ]
+                        },
+                        "quantity": {
+                            "bsonType": "int"
+                        }
+                    },
+                    "required": [
+                        "minifigure",
+                        "quantity"
+                    ]
+                }
+            }
+        },
+        "required": [
+            "_id",
+            "version",
+            "setNumber",
+            "parts",
+            "minifigures"
+        ]
+    }
+}

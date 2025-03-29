@@ -1,0 +1,26 @@
+{
+    "$jsonSchema": {
+        "bsonType": "object",
+        "title": "Color",
+        "properties": {
+            "_id": {
+                "bsonType": "int"
+            },
+            "name": {
+                "bsonType": "string"
+            },
+            "rgb": {
+                "bsonType": "string"
+            },
+            "isTransparent": {
+                "bsonType": "bool"
+            }
+        },
+        "required": [
+            "_id",
+            "name",
+            "rgb",
+            "isTransparent"
+        ]
+    }
+}
